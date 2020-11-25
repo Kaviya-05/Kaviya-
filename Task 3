@@ -1,0 +1,70 @@
+1.Python Code:
+
+d1 = {'a': 300, 'b': 200}
+d2 = {'x': 500, 'y': 100}
+d = d1.copy()
+d.update(d2)
+print(d)
+
+Copy
+Sample Output:
+
+{'x': 500, 'y': 100, 'a': 300, 'b': 200}
+2.Python Code:
+
+myDict = {'a':1,'b':2,'c':3,'d':4}
+print(myDict)
+if 'a' in myDict: 
+    del myDict['a']
+print(myDict)
+
+Copy
+Sample Output:
+
+{'a': 1, 'b': 2, 'c': 3, 'd': 4}
+{'b': 2, 'c': 3, 'd': 4}
+3.Python Code:
+
+keys = ['red', 'green', 'blue']
+values = ['#FF0000','#008000', '#0000FF']
+color_dictionary = dict(zip(keys, values))
+print(color_dictionary)
+
+Copy
+Sample Output:
+
+{'red': '#FF0000', 'green': '#008000', 'blue': '#0000FF'}
+
+4.Python Code:
+#Create a set
+seta = set([5, 10, 3, 15, 2, 20])
+#Find the length use len()
+print(len(seta))
+
+Copy
+Sample Output:
+
+6
+5.sn1 = {1,2,3,4,5}
+sn2 = {4,5,6,7,8}
+print("Original sets:")
+print(sn1)
+print(sn2)
+print("Remove the intersection of a 2nd set from the 1st set using difference_update():")
+sn1.difference_update(sn2)
+print(sn1)
+sn1 = {1,2,3,4,5}
+sn2 = {4,5,6,7,8}
+print("Remove the intersection of a 2nd set from the 1st set using -= operator:")
+print(sn1-sn2)
+
+Copy
+Sample Output:
+
+Original sets:
+{1, 2, 3, 4, 5}
+{4, 5, 6, 7, 8}
+Remove the intersection of a 2nd set from the 1st set using difference_update():
+{1, 2, 3}
+Remove the intersection of a 2nd set from the 1st set using -= operator:
+{1, 2, 3}
